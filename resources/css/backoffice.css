@@ -1,0 +1,192 @@
+#back_office .modal h1 {
+    margin: 0;
+    color: black;
+}
+
+#back_office .accordion {
+    padding: 50px 0 !important;
+    width: 50%;
+}
+
+#edit_form .accordion-button:focus,
+#back_office .accordion-button:focus {
+    box-shadow: 0 0 1px #b85656;
+}
+
+#edit_form .accordion-button:not(.collapsed),
+#back_office .accordion-button:not(.collapsed) {
+    background-color: #b85656;
+    box-shadow: 0 0 3px #b85656;
+    color: white;
+}
+
+#back_office .asking .datetime_backoffice {
+    font-weight: bold;
+} 
+
+#back_office .accordion-button.asking_collapse {
+    color: #a44a4a;
+}
+
+#back_office .accordion-button.asking_collapse:not(.collapsed) {
+    color: white;
+}
+
+#back_office .lil_icon_action:hover {
+    transform: scale(1.1);
+}
+
+#back_office .lil_icon_action img {
+    width: 30px;
+    cursor: pointer;
+}
+
+#back_office .lil_icon_action {
+    all: unset;
+    transition: 0.1s;
+    width: 30px;
+    height: auto;
+    color: yellow;
+}
+
+.modif_backoffice {
+    align-items: baseline;
+}
+
+.modif_backoffice img {
+    cursor: pointer !important;
+}
+
+.modif_backoffice a {
+    margin-left: 5px;
+}
+
+.modif_backoffice .modal label {
+    text-transform: initial;
+    font-weight: bold;
+}
+
+#back_office form select {
+    text-transform: capitalize;
+}
+
+#back_office td {
+    height: 70px;
+}
+
+.span_full_desc u {
+    cursor: pointer;
+}
+
+.span_full_desc {
+    display: flex;
+    justify-content: space-between;
+}
+
+#back_office .seemore {
+    color: #a44a4a;
+    text-decoration: none;
+    font-style: italic;
+    cursor: pointer;
+}
+
+#back_office .points {
+    color: #a3a3a3;
+}
+
+#back_office .back_office_nav_messages {
+    padding: 20px 0 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#back_office .back_office_nav_messages .selected_span {
+    background-color: #a44a4a32;
+}
+
+#back_office .back_office_nav_messages span {
+    border: solid 1px #a44a4a;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#back_office .back_office_nav_messages span:hover {
+    font-size: 0.95em;
+    background-color: #a44a4a10;
+}
+
+#back_office .back_office_nav_messages span.one {
+    border-radius: 10px 0 0 10px;
+}
+
+#back_office .back_office_nav_messages span.two {
+    border-radius: 0 10px 10px 0;
+}
+
+
+#back_office .etat_style td {
+    color: rgb(120, 120, 120);
+}
+
+#back_office .statusSwitch:focus {
+    box-shadow: 0 0 0 0.25rem #a44a4a46;
+}
+
+.form-switch .form-check-input.statusSwitch {
+    background-color: white;
+    border-color: gray;
+    --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23808080'/%3e%3c/svg%3e");
+}
+
+.form-switch .form-check-input.statusSwitch:checked {
+    background-color: white;
+    border-color: #a44a4a;
+    --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23a44a4a'/%3e%3c/svg%3e");
+}
+
+
+
+
+
+
+.change_status_icon:hover .icon_upload_img {
+    opacity: 1;
+}
+
+.icon_upload_img {
+    opacity: 0;
+    transition: 0.5s;
+    position: absolute;
+    pointer-events: none;
+    width: 20%;
+}
+
+.change_status_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload_img_style {
+    width: 100%;
+    cursor: pointer;
+}
+
+#back_office .btn_ban {
+    color: #a44a4a;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 991px) {
+    #back_office .accordion {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #back_office .accordion {
+        width: 90%;
+    }
+}

@@ -1,0 +1,234 @@
+/* *********************************************************************************************************** */
+/* *********************************************** PAGE GAMMES ************************************************ */
+/* *********************************************************************************************************** */
+
+#gammes .survol img {
+    cursor: pointer;
+}
+
+#gammes {
+    padding: 0 0 100px 0;
+}
+
+
+
+#panier h1,
+#contact h1,
+#pasapas h1,
+#gammes h1:not(#gammes .modal h1, #gammes h1.title_section) {
+    font-size: 50px;
+    padding-bottom: 100px;
+    margin-left: 150px;
+    font-family: 'Handlee', cursive;
+    color: #fff;
+    text-shadow: 0 0 2px black;
+    font-weight: 600;
+}
+
+
+
+#panier h1 {
+    margin: 0;
+}
+
+#gammes .survol a {
+    text-decoration: none;
+}
+
+#gammes h2 {
+    text-transform: uppercase;
+    transition: 0.4s;
+    letter-spacing: 5px;
+    font-size: 35px;
+    position: relative;
+    bottom: 38%;
+    font-weight: 600;
+    color: rgb(236, 236, 236);
+    text-shadow: 0 0 0.75px black;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+#gammes .survol img {
+    position: relative;
+    transition: 0.2s;
+    width: 100%;
+}
+
+#gammes .survol img:hover {
+    transform: scale(1.01);
+    filter: brightness(0.7) blur(1px);
+}
+
+#gammes .survol:hover h2 {
+    color: white;
+}
+
+#gammes .card p {
+    font-size: 17px;
+}
+.show_products_gamme .modal-content {
+    background-color: transparent;
+    border: 5px solid rgba(255, 255, 255, 0.91);
+}
+
+
+.show_products_gamme .modal-footer {
+    background-color: rgba(255, 255, 255, 0.59);
+
+}
+.show_products_gamme .modal-header {
+    background-color: rgb(208, 208, 208);
+    color: #a44a4a;
+    text-shadow: 0 0 3px white;
+    border-bottom: none;
+}
+
+.show_products_gamme .modal-body {
+    background-color: #ffffffc3;
+}
+
+.show_products_gamme {
+    display: none;
+}
+
+.show_products_gamme h1 {
+    font-weight: bold;
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+.show_products_gamme a {
+    color: #a44a4a;
+}
+
+.show_products_gamme .card {
+    background-color: #cecece;
+    border: 5px solid #8c8c8c;
+    color: #000;
+    text-shadow: 0 0 0.5px #a44a4a;
+    transition: 0.3s;
+}
+
+.show_products_gamme p,
+.show_products_gamme hr {
+    color: #a44a4a;
+}
+
+.show_products_gamme .card:hover {
+    border-color: #a44a4a;
+}
+
+.show_products_gamme .modal-header {
+    justify-content: center;
+}
+
+#gammes .show_products_gamme .offcanvas-body p {
+color: white;
+}
+#gammes .show_products_gamme .offcanvas-body a {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.vote_icon .col-4 button,
+.vote_icon .col-4 {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.vote_icon .badicon img {
+    background-color: #a44a4a6e;
+    border: 3px solid #a44a4aa7;
+}
+
+.vote_icon .goodicon img {
+    background-color: #fedb1869;
+    border: 3px solid #fedb182a;
+}
+
+.vote_icon .verygoodicon img {
+    background-color: #6ab0426f;
+    border: 3px solid #6ab0428d;
+}
+
+.vote_icon .badicon img,
+.vote_icon .goodicon img,
+.vote_icon .verygoodicon img {
+    padding: 4px;
+    border-radius: 25px;
+    width: 3em;
+    transition: 0.4s;
+}
+
+.vote_icon .badicon:hover img,
+.vote_icon .goodicon:hover img,
+.vote_icon .verygoodicon:hover img {
+    transform: rotateY(180deg);
+}
+
+#edit_form .btn_delete_satisfaction,
+#gammes .btn_delete_satisfaction {
+    all: unset;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#gammes .img_gamme_product {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#gammes .desc_gamme_product,
+#gammes .fulldesc_gamme_product {
+    background-color: rgba(255, 255, 255, 0.14);
+    padding: 7px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#gammes .name_gamme_product {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#gammes .stat_satis {
+    display: flex;
+    justify-content: space-around;
+}
+
+#gammes .stat_satis p {
+    margin: 0;
+    margin-right: 5px;
+}
+
+#gammes .contain_stat_satis {
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (max-width:991px) {
+    #panier h1 {
+        font-size: 40px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #gammes .survol img {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #gammes .survol img {
+        padding: 0 0;
+    }
+}

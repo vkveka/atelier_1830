@@ -1,0 +1,230 @@
+#register,
+#login {
+    min-height: 83vh;
+    display: flex;
+    align-items: center;
+    z-index: 0;
+}
+
+#login h2.title_connection {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 20px;
+    margin-right: -20px;
+}
+
+#register h2.title_connection {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 40px;
+    margin-right: -40px;
+}
+
+#register a.btn-link,
+#login a.btn-link {
+    color: #fff;
+}
+
+#register a.btn-link:hover,
+#login a.btn-link:hover {
+    color: rgb(230, 230, 230);
+}
+
+
+#register .register-form,
+#login .login-form {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 50px;
+    border-radius: 5px;
+}
+
+#register .register-form textarea,
+#register .register-form input,
+#login .login-form textarea,
+#login .login-form input {
+    background-color: rgba(255, 255, 255, 0.563);
+}
+
+#register input.input-group-text,
+#login input.input-group-text {
+    border-left: none;
+}
+
+#register .register-form textarea,
+#login .login-form textarea {
+    height: 200px;
+}
+
+#register .title_contact,
+#login .title_contact {
+    background-color: rgba(255, 255, 255, 0.495);
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.fond-terracotta-login {
+    background-image: linear-gradient(135deg, #a44a4a, rgba(209, 181, 120, 0.966));
+}
+
+
+.body-background-login img {
+    filter: blur(8px);
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    width: 100vw;
+}
+
+#login .login-form .fa,
+#register .register-form .fa {
+    color: #a44a4a;
+}
+
+
+
+/* ********************************************************* CONNECTION ********************************************** */
+
+.form-control:focus {
+    border-color: #a44a4a82;
+    box-shadow: 0 0 2px 4px rgb(228, 150, 150)
+}
+
+.btn-connection {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #000000;
+    /* --bs-btn-border-color: #fff; */
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #1b1b1b;
+    --bs-btn-hover-border-color: #000000;
+    --bs-btn-focus-shadow-rgb: 66, 70, 73;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #1b1b1b;
+    --bs-btn-active-border-color: #fff;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #212529;
+    --bs-btn-disabled-border-color: #212529;
+}
+
+
+#register #valider {
+    cursor: not-allowed;
+}
+
+#register .politique a {
+    color: #a44a4a;
+}
+
+
+#register input[type="checkbox"]#politique {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    border-radius: 4px;
+    min-height: 15px;
+    min-width: 15px;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    transition: 0.2s;
+}
+
+/* Style personnalisé pour les cases à cocher */
+#register .politique input[type="checkbox"]#politique:hover {
+    cursor: pointer;
+    background: #ffffff9a;
+}
+
+#register .politique [type=checkbox]#politique:checked {
+    background-color: #a44a4a;
+    border-color: #a44a4a;
+    position: relative;
+
+    &:before {
+        font-family: FontAwesome;
+        content: '\f00c';
+        display: block;
+        color: #fff;
+        font-size: 10px;
+        position: absolute;
+        bottom: -2px;
+        left: 2px;
+    }
+}
+
+#register input[type=checkbox]#politique:checked:hover {
+    &:before {
+        color: #a44a4a;
+    }
+}
+
+
+.span_hidden {
+    display: none;
+}
+
+#monSpan {
+    font-weight: bold;
+    color: rgb(230, 0, 0);
+}
+
+
+#register .recommandation_cnil {
+    color: #a44a4a;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 1.1;
+}
+
+@media screen and (max-width: 1200px) {
+
+    #login h2.title_connection,
+    #register h2.title_connection {
+        letter-spacing: 30px;
+        margin-right: -30px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    #login h2.title_connection,
+    #register h2.title_connection {
+        letter-spacing: 20px;
+        margin-right: -20px;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+
+    #register,
+    #login {
+        padding: 10px;
+    }
+
+    #register .register-form,
+    #login .login-form {
+        padding: 20px 10px;
+    }
+
+    #login h2.title_connection,
+    #register h2.title_connection {
+        letter-spacing: 15px;
+        margin-right: -15px;
+    }
+}
+
+
+@media screen and (max-width: 330px) {
+
+    #login h2.title_connection,
+    #register h2.title_connection {
+        letter-spacing: 10px;
+        margin-right: -10px;
+    }
+}

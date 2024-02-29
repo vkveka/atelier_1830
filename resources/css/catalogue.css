@@ -1,0 +1,148 @@
+#catalogue {
+    padding: 50px 0;
+}
+
+#catalogue .title_section {
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: 'Passions Conflict', cursive;
+    font-size: 90px;
+    text-decoration: underline 1px black;
+    text-underline-offset: 30px;
+}
+
+.gallery_4 {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery_4 img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform 1000ms;
+}
+
+.gallery_4 .modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+
+.gallery_4 .modal img {
+    aspect-ratio: auto;
+    max-height: 83vh;
+    object-fit: contain;
+}
+
+.gallery_4 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    max-width: 100%;
+    width: 70rem;
+}
+
+
+.gallery_4 ul li a {
+    cursor: pointer;
+}
+
+.gallery_4 figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery_4 figure::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(0, 0, 0, 0.5);
+    transform-origin: center;
+    opacity: 0;
+    transform: scale(2);
+    transition: opacity 300ms;
+}
+
+.gallery_4 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 600ms, transform 600ms;
+}
+
+.gallery_4 a:is(:hover, :focus) figure::after {
+    opacity: 1;
+}
+
+.gallery_4 a:is(:hover, :focus) figcaption {
+    opacity: 1;
+    transition: opacity 600ms;
+}
+
+#catalogue .carousel-caption {
+    padding-bottom: 0;
+    bottom: 0;
+}
+
+#catalogue .carousel-caption h5 {
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    background-color: rgba(0, 0, 0, 0.486);
+    border-radius: 1vh;
+    padding: 0 20px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .gallery_4 figcaption {
+        transform: translate3d(0, 2rem, 0);
+    }
+
+    .gallery_4 figure::after {
+        border-radius: 50%;
+        opacity: 1;
+        transform: scale(0);
+        transition: transform 900ms;
+    }
+
+    .gallery_4 a:is(:hover, :focus) figure::after {
+        transform: scale(2.5);
+    }
+
+    .gallery_4 a:is(:hover, :focus) figcaption {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        transition: opacity 600ms 400ms, transform 600ms 400ms;
+    }
+
+    .gallery_4 a:is(:hover, :focus) img {
+        transform: scale(1.2);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .gallery_4 ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,76 @@
+#comments .div_comments {
+    background-color: rgba(255, 255, 255, 0.179);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.37);
+    padding: 100px 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+#comments {
+    padding-top: 100px;
+}
+
+#comments .div_comments::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: inherit;
+    backdrop-filter: blur(3px);
+    z-index: -1;
+}
+
+#comments p {
+    color: rgb(82, 82, 82);
+    font-size: 18px;
+    margin-top: 40px;
+    font-style: italic;
+}
+
+#comments i {
+    text-shadow: 0 0 black;
+}
+
+#comments h5.title_comment {
+    font-size: 20px;
+    font-weight: bold;
+}
+#comments h6,
+#comments h5 {
+    font-style: italic;
+    color: rgb(84, 84, 84);
+}
+
+#comments span {
+    font-size: 25px;
+    color: #a44a4a;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 15px;
+}
+
+.quote_comment {
+    position: relative;
+}
+
+.quote_comment p::before {
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #a44a4a;
+    position: absolute;
+    transform: translateY(-100%) translateX(-110%);
+}
+
+.quote_comment p::after {
+    content: "\f10e";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #a44a4a;
+    position: absolute;
+    transform: translateY(100%);
+}
+
+

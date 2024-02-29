@@ -1,0 +1,156 @@
+#pasapas h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+#pasapas .row_carousel_pasapas {
+    padding: 30px 0;
+}
+
+#pasapas .carousel-inner {
+    border: 15px ridge #a44a4adc;
+}
+
+#pasapas .carousel-caption h5 {
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.486);
+    border-radius: 1vh;
+    padding: 0 20px;
+}
+
+#pasapas .row_carousel_pasapas h2 {
+    text-align: justify;
+    text-shadow: 2px 2px 3px black;
+}
+
+#pasapas .section1 {
+    padding: 100px 0;
+    background-color: rgba(0, 0, 0, 0.26);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.26), transparent);
+}
+
+
+.cursor-circle {
+    z-index: 99999;
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    background-color: #a44a4abe;
+    pointer-events: none;
+    transform: rotate(45deg);
+    animation: rotate 2s linear infinite;
+}
+
+.cursor-circle-black {
+    z-index: 99999;
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    background-color: #000;
+    pointer-events: none;
+    transform: rotate(45deg);
+    animation: rotate 2s linear infinite;
+}
+
+.cursor-two-circle {
+    z-index: 99999;
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+    transform: rotate(45deg);
+    animation: rotate 2s linear infinite;
+}
+
+
+
+
+#pasapas .section2 {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.26), transparent);
+    padding-bottom: 100px;
+}
+
+#pasapas .section2 h2 {
+    font-size: 35px;
+    text-shadow: 2px 2px 3px rgb(70, 70, 70);
+}
+
+#pasapas #carouselExampleDark2 {
+    width: 30%;
+}
+
+
+
+@media screen and (max-width:1300px) {
+    #pasapas .section2 h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    #pasapas .section2 h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    #pasapas h2 {
+        font-size: 35px;
+    }
+
+    #pasapas .carousel-caption h5 {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+
+    .cursor-circle,
+    .cursor-two-circle {
+        display: none;
+    }
+}
+
+@media screen and (max-width:991px) {
+    #pasapas h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #pasapas .section2 h2 {
+        padding: 20px 30px;
+    }
+
+    #pasapas #carouselExampleDark2 {
+        width: 65%;
+    }
+
+    #pasapas .section1 {
+        padding-top: 30px;
+    }
+
+    #pasapas .section2 .row_carousel_pasapas {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    #pasapas #carouselExampleDark2 {
+        width: 70%;
+    }
+
+    #pasapas .carousel-caption h5 {
+        font-size: 15px;
+    }
+
+}
